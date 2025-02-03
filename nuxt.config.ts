@@ -6,8 +6,11 @@ export default defineNuxtConfig({
   nitro: {
     preset: "cloudflare_module",
     experimental: {
-      tasks: true, // 追加
+      tasks: true,
     },
+    scheduledTasks: {
+      '* * * * *': ['now'] // 追加
+    }
   },
 
   modules: ["nitro-cloudflare-dev"]
