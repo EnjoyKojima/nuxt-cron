@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       tasks: true,
     },
     scheduledTasks: {
-      '* * * * *': ['now'] // 追加
+      '*/5 * * * * *': ['now'] // 5秒ごとに実行
     }
   },
 
